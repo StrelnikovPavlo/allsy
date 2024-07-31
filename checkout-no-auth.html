@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+	<title>Оформлення замовлення</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240731153616" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240731153616">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header-checkout">
+			<div class="header-checkout__container">
+				<div class="header-checkout__row">
+					<a href="#" class="header-checkout__link-back">
+						<svg width="22" height="14">
+							<use xlink:href="img/icons/icons.svg#arrow"></use>
+						</svg>
+					</a>
+					<a href="/" class="header-checkout__logo"><img src="img/logo.svg" alt="img"></a>
+					<div class="header-checkout__actions actions-header">
+						<a href="tel:+380668848451" class="actions-header__phone">
+							<div class="actions-header__phone-icon">
+								<svg width="24" height="24">
+									<use xlink:href="img/icons/icons.svg#call"></use>
+								</svg>
+							</div>
+							<span>+38 (066) 88 48 451</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="checkout">
+			<div class="checkout__container">
+				<div class="checkout__body">
+					<div class="checkout__details">
+						<div class="checkout__title">
+							<div class="caption__title">Оформлення замовлення</div>
+						</div>
+						<form action="#" class="checkout__form form-checkout">
+							<div class="form-checkout__section">
+								<div class="form-checkout__section-title form-checkout__section-title_m">Авторизація</div>
+								<div class="form-checkout__lead">Для початку оформлення замовлення введіть ваш номер телефону</div>
+								<div class="form-checkout__fields form-checkout__fields_column">
+									<div class="form-checkout__input form-checkout__input_big">
+										<label class="input-label">Ваша електронна пошта<span>*</span></label>
+										<input data-required="email" autocomplete="off" type="email" name="email" placeholder="Введіть електронну адресу" class="input" />
+									</div>
+									<div class="form-checkout__input form-checkout__input_big">
+										<label class="input-label">Пароль<span>*</span></label>
+										<div class="form-checkout__input-row">
+											<input data-required autocomplete="off" type="password" name="password" placeholder="Введіть пароль" class="input input_password" />
+											<button type="button" class="form-checkout__viewpass btn-viewpass">
+												<svg width="24" height="24">
+													<use xlink:href="img/icons/icons.svg#eye"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="form-checkout__submit btn btn-yellow">Авторизуватись</button>
+							</div>
+							<div class="form-checkout__section">
+								<div class="form-checkout__section-title form-checkout__section-title_disable">Доставка</div>
+							</div>
+							<div class="form-checkout__section">
+								<div class="form-checkout__section-title form-checkout__section-title_disable">Спосіб оплати</div>
+							</div>
+						</form>
+					</div>
+					<div class="checkout__summary summary-checkout">
+						<div class="summary-checkout__fixed fixed-summary">
+							<div class="fixed-summary__images">
+								<img src="img/summary/01.webp" alt="img" />
+								<img src="img/summary/02.webp" alt="img" />
+							</div>
+							<div class="fixed-summary__total">
+								<div class="fixed-summary__text">До оплати</div>
+								<div class="fixed-summary__price">13 250 ₴</div>
+							</div>
+							<div class="fixed-summary__arrow">
+								<svg width="18" height="11">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="summary-checkout__body">
+							<div class="summary">
+								<div class="summary__header">
+									<div class="summary__caption">Ваше замовлення (3)</div>
+									<div class="summary__actions">
+										<button type="button" class="summary__close">
+											<svg width='20' height='20'>
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</button>
+										<button type="button" class="summary__hide">
+											<svg width='18' height='11'>
+												<use xlink:href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="summary__main">
+									<div class="product-summary">
+										<div class="product-summary__img">
+											<img src="img/summary/01.webp" alt="img">
+										</div>
+										<div class="product-summary__content">
+											<div class="product-summary__row">
+												<a href='#' class="product-summary__title">Agape Beige</a>
+												<button type="button" class="product-summary__delete">
+													<svg width='18' height='18'>
+														<use xlink:href="img/icons/icons.svg#delete"></use>
+													</svg>
+												</button>
+											</div>
+											<div class="product-summary__desc">
+												<div class="product-summary__value">Розмір <span>38</span></div>
+												<div class="product-summary__value">Колір <span>бежевий</span></div>
+											</div>
+											<div class="product-summary__row product-summary__row_last">
+												<div data-quantity class="quantity">
+													<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value autocomplete="off" type="text" name="quantity" value="1">
+													</div>
+													<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+												</div>
+												<div class="product-summary__total">6 211 ₴</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-summary">
+										<div class="product-summary__img">
+											<img src="img/summary/02.webp" alt="img">
+										</div>
+										<div class="product-summary__content">
+											<div class="product-summary__row">
+												<a href='#' class="product-summary__title">Esperanza Green</a>
+												<button type="button" class="product-summary__delete">
+													<svg width='18' height='18'>
+														<use xlink:href="img/icons/icons.svg#delete"></use>
+													</svg>
+												</button>
+											</div>
+											<div class="product-summary__desc">
+												<div class="product-summary__value">Розмір <span>38</span></div>
+												<div class="product-summary__value">Колір <span>зелений</span></div>
+											</div>
+											<div class="product-summary__row product-summary__row_last">
+												<div data-quantity class="quantity">
+													<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value autocomplete="off" type="text" name="quantity" value="1">
+													</div>
+													<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+												</div>
+												<div class="product-summary__total">6 211 ₴</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="summary__footer">
+									<div class="summary__costs">
+										<div class="summary__cost">
+											<span>Бонуси</span>
+											<span>-200 ₴</span>
+										</div>
+										<div class="summary__cost">
+											<span>Доставка</span>
+											<span>0 ₴</span>
+										</div>
+										<div class="summary__cost summary__total">
+											<div class="summary__total-label">До оплати</div>
+											<div class="summary__total-value">13 250 ₴</div>
+										</div>
+									</div>
+									<button type="submit" disabled class="summary__btn btn btn-gray">Оформити замовлення</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="checkout-policy">Privacy Policy</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240731153616"></script>
+	<script src="js/app.min.js?_v=20240731153616"></script>
+</body>
+
+</html>

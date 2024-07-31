@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+	<title>Оформлення замовлення</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240731153616" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240731153616">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header-checkout">
+			<div class="header-checkout__container">
+				<div class="header-checkout__row">
+					<a href="#" class="header-checkout__link-back">
+						<svg width="22" height="14">
+							<use xlink:href="img/icons/icons.svg#arrow"></use>
+						</svg>
+					</a>
+					<a href="/" class="header-checkout__logo"><img src="img/logo.svg" alt="img"></a>
+					<div class="header-checkout__actions actions-header">
+						<a href="tel:+380668848451" class="actions-header__phone">
+							<div class="actions-header__phone-icon">
+								<svg width="24" height="24">
+									<use xlink:href="img/icons/icons.svg#call"></use>
+								</svg>
+							</div>
+							<span>+38 (066) 88 48 451</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="checkout">
+			<div class="checkout__container">
+				<div class="checkout__body">
+					<div class="checkout__details">
+						<div class="checkout__title">
+							<div class="caption__title">Оформлення замовлення</div>
+						</div>
+						<form action="#" class="checkout__form form-checkout">
+							<div class="form-checkout__section">
+								<div class="form-checkout__section-title">Ваші дані</div>
+								<div class="form-checkout__fields">
+									<div class="form-checkout__input">
+										<label class="input-label">Ваше ім’я<span>*</span></label>
+										<input autocomplete="off" type="text" name="username" placeholder="Ваше ім’я" class="input" />
+									</div>
+									<div class="form-checkout__input">
+										<label class="input-label">Ваше прізвище<span>*</span></label>
+										<input autocomplete="off" type="text" name="surname" placeholder="Ваше прізвище" class="input" />
+									</div>
+									<div class="form-checkout__input">
+										<label class="input-label">Ваш номер телефону<span>*</span></label>
+										<input autocomplete="off" type="tel" name="phone" placeholder="Номер телефону" class="input" />
+									</div>
+									<div class="form-checkout__input">
+										<label class="input-label">Ваша електронна пошта<span>*</span></label>
+										<input autocomplete="off" type="email" name="email" placeholder="Ваша електронна пошта" class="input" />
+									</div>
+								</div>
+							</div>
+							<div class="form-checkout__section">
+								<div class="form-checkout__section-title">Доставка</div>
+								<div class="form-checkout__label">Спосіб доставки</div>
+								<div class="form-checkout__options">
+									<div data-accardion class="form-checkout__option option-form _accordion-active">
+										<div data-accardion-title class="option-form__title">
+											<div class="radio">
+												<input id="d_1" class="radio__input" checked type="radio" value="1" name="delivery" />
+												<label for="d_1" class="radio__label"><span class="radio__text">До відділення Нової пошти</span></label>
+											</div>
+										</div>
+										<div data-accardion-content class="option-form__content">
+											<div class="option-form__address">
+												<div class="option-form__select">
+													<select name="city">
+														<option value="1" selected>Місто</option>
+														<option value="">Дніпро</option>
+														<option value="3">Львів</option>
+														<option value="4">Харків</option>
+													</select>
+												</div>
+												<div class="option-form__select">
+													<select data-one-select name="departments">
+														<option value="1" selected>Відділення</option>
+														<option value="2">Дніпро</option>
+														<option value="3">Львів</option>
+														<option value="4">Харків</option>
+													</select>
+												</div>
+											</div>
+											<button class="option-form__checkbox checkbox _active">
+												<span class="checkbox__text">Отримуватиме інша людина</span>
+											</button>
+											<div class="option-form__data">
+												<div class="option-form__data-caption">
+													Дані одержувача
+												</div>
+												<div class="option-form__fields">
+													<div class="option-form__input">
+														<label class="input-label">І’мя<span>*</span></label>
+														<input autocomplete="off" type="text" name="recipient-name" placeholder="Введіть і’мя" class="input" />
+													</div>
+													<div class="option-form__input">
+														<label class="input-label">Прізвище<span>*</span></label>
+														<input autocomplete="off" type="text" name="ecipient-surname" placeholder="Введіть прізвище" class="input" />
+													</div>
+													<div class="option-form__input">
+														<label class="input-label">Телефон<span>*</span></label>
+														<input autocomplete="off" type="tel" name="phone" placeholder="Введіть телефон" class="input" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-accardion class="form-checkout__option option-form">
+										<div data-accardion-title class="option-form__title">
+											<div class="radio">
+												<input id="d_2" class="radio__input" type="radio" value="2" name="delivery" />
+												<label for="d_2" class="radio__label"><span class="radio__text">Адресна доставка</span></label>
+											</div>
+										</div>
+										<div data-accardion-content class="option-form__content">
+											<div class="option-form__address">
+												<div class="option-form__select">
+													<select name="city">
+														<option value="1" selected>Місто</option>
+														<option value="2">Дніпро</option>
+														<option value="3">Львів</option>
+														<option value="4">Харків</option>
+													</select>
+												</div>
+												<div class="option-form__select">
+													<select name="departments">
+														<option value="1" selected>Відділення</option>
+														<option value="2">Дніпро</option>
+														<option value="3">Львів</option>
+														<option value="4">Харків</option>
+													</select>
+												</div>
+											</div>
+											<div class="option-form__data">
+												<div class="option-form__data-caption">Дані одержувача</div>
+												<div class="option-form__fields">
+													<div class="option-form__input">
+														<label class="input-label">І’мя<span>*</span></label>
+														<input autocomplete="off" type="text" name="recipient-name" placeholder="Введіть і’мя" class="input" />
+													</div>
+													<div class="option-form__input">
+														<label class="input-label">Прізвище<span>*</span></label>
+														<input autocomplete="off" type="text" name="ecipient-surname" placeholder="Введіть прізвище" class="input" />
+													</div>
+													<div class="option-form__input">
+														<label class="input-label">Телефон<span>*</span></label>
+														<input autocomplete="off" type="tel" name="phone" placeholder="Введіть телефон" class="input" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-accardion class="form-checkout__option option-form">
+										<div data-accardion-title class="option-form__title">
+											<div class="radio">
+												<input id="d_3" class="radio__input" type="radio" value="3" name="delivery" />
+												<label for="d_3" class="radio__label"><span class="radio__text">В поштомат Нової пошти</span></label>
+											</div>
+										</div>
+										<div data-accardion-content class="option-form__content">
+											<div class="option-form__address">
+												<div class="option-form__select">
+													<select name="city">
+														<option value="1" selected>КиЇв</option>
+														<option value="2">Дніпро</option>
+														<option value="3">Львів</option>
+													</select>
+												</div>
+												<div class="option-form__select">
+													<select name="departments">
+														<option value="1" selected>Дніпро</option>
+														<option value="3">Львів</option>
+														<option value="4">Харків</option>
+													</select>
+												</div>
+											</div>
+											<div class="option-form__data">
+												<div class="option-form__data-caption">Дані одержувача</div>
+												<div class="option-form__fields">
+													<div class="option-form__input">
+														<label class="input-label">І’мя<span>*</span></label>
+														<input autocomplete="off" type="text" name="recipient-name" placeholder="Введіть і’мя" class="input" />
+													</div>
+													<div class="option-form__input">
+														<label class="input-label">Прізвище<span>*</span></label>
+														<input autocomplete="off" type="text" name="ecipient-surname" placeholder="Введіть прізвище" class="input" />
+													</div>
+													<div class="option-form__input">
+														<label class="input-label">Телефон<span>*</span></label>
+														<input autocomplete="off" type="tel" name="phone" placeholder="Введіть телефон" class="input" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-checkout__section">
+								<div class="form-checkout__section-title">Спосіб оплати</div>
+								<div class="form-checkout__options">
+									<div class="form-checkout__option option-form">
+										<div class="option-form__title">
+											<div class="radio">
+												<input id="p_1" class="radio__input" checked type="radio" value="1" name="pay" />
+												<label for="p_1" class="radio__label"><span class="radio__text">Оплата на сайті</span></label>
+											</div>
+										</div>
+									</div>
+									<div class="form-checkout__option option-form">
+										<div class="option-form__title">
+											<div class="radio">
+												<input id="p_2" class="radio__input" type="radio" value="2" name="pay" />
+												<label for="p_2" class="radio__label"><span class="radio__text">Оплата при отриманні</span></label>
+											</div>
+										</div>
+									</div>
+									<div class="form-checkout__option option-form">
+										<div class="option-form__title">
+											<div class="radio">
+												<input id="p_3" class="radio__input" type="radio" value="3" name="pay" />
+												<label for="p_3" class="radio__label"><span class="radio__text">Оплата частинами від ПриватБанк</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="checkout__summary summary-checkout">
+						<div class="summary-checkout__fixed fixed-summary">
+							<div class="fixed-summary__images">
+								<img src="img/summary/01.webp" alt="img" />
+								<img src="img/summary/02.webp" alt="img" />
+							</div>
+							<div class="fixed-summary__total">
+								<div class="fixed-summary__text">До оплати</div>
+								<div class="fixed-summary__price">13 250 ₴</div>
+							</div>
+							<div class="fixed-summary__arrow">
+								<svg width="18" height="11">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="summary-checkout__body">
+							<div class="summary">
+								<div class="summary__header">
+									<div class="summary__caption">Ваше замовлення (3)</div>
+									<div class="summary__actions">
+										<a href='#' class="summary__edit-btn">Редагувати</a>
+										<button type="button" class="summary__hide">
+											<svg width='18' height='11'>
+												<use xlink:href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="summary__main">
+									<div class="product-summary">
+										<div class="product-summary__img">
+											<img src="img/summary/01.webp" alt="img">
+										</div>
+										<div class="product-summary__content product-summary__content_row">
+											<div class="product-summary__column">
+												<div class="product-summary__code">E144848R74</div>
+												<a href='#' class="product-summary__title">Agape Beige</a>
+												<div class="product-summary__desc product-summary__desc_column">
+													<div class="product-summary__value">Розмір <span>38</span></div>
+													<div class="product-summary__value">Колір <span>бежевий</span></div>
+												</div>
+											</div>
+											<div class="product-summary__total">6 211 ₴</div>
+										</div>
+									</div>
+									<div class="product-summary">
+										<div class="product-summary__img">
+											<img src="img/summary/02.webp" alt="img">
+										</div>
+										<div class="product-summary__content product-summary__content_row">
+											<div class="product-summary__column">
+												<div class="product-summary__code">E144848R74</div>
+												<a href='#' class="product-summary__title">Esperanza Green</a>
+												<div class="product-summary__desc product-summary__desc_column">
+													<div class="product-summary__value">Розмір <span>38</span></div>
+													<div class="product-summary__value">Колір <span>зелений</span></div>
+												</div>
+											</div>
+											<div class="product-summary__total">6 211 ₴</div>
+										</div>
+									</div>
+								</div>
+								<div class="summary__footer">
+									<a href="#" class="summary__promo">Використати промокод</a>
+									<div class="summary__costs">
+										<div class="summary__cost summary__total summary__total_big">
+											<div class="summary__total-label">До оплати</div>
+											<div class="summary__total-value">13 250 ₴</div>
+										</div>
+									</div>
+									<button type="submit" class="summary__btn btn btn-yellow">Оформити замовлення</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="checkout-policy">Privacy Policy</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240731153616"></script>
+	<script src="js/app.min.js?_v=20240731153616"></script>
+</body>
+
+</html>

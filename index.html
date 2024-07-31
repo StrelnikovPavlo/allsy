@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Allsy»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «Allsy»</h1>
+		<div class="rootpage__info">
+			Опис проєкту
+		</div>
+		<h2>Готові сторінки:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Головна</a></li>
+			<li><a target="_blank" href="contacts.html">Контакти</a></li>
+			<li><a target="_blank" href="404.html">404</a></li>
+			<li><a target="_blank" href="result-search.html">Результаты поиска</a></li>
+			<li><a target="_blank" href="brands.html">страница производителей</a></li>
+		</ol>
+		<h4>Карточка товара</h4>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="product.html">Карточка товара (в наличии - обычная цена)</a></li>
+			<li><a target="_blank" href="product-discount.html">Карточка товара (в наличии - скидка)</a></li>
+			<li><a target="_blank" href="product-out.html">Карточка товара (нет в наличии)</a></li>
+			<li><a target="_blank" href="product-discontinued.html">Карточка товара (снято с производства)</a></li>
+			<li><a target="_blank" href="product-order.html">Карточка товара (под заказ)</a></li>
+		</ol>
+		<h4>Категории</h4>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="categories.html">Последняя категория</a></li>
+			<li><a target="_blank" href="categories-brand.html">конкретная страница производителей</a></li>
+			<li><a target="_blank" href="categories-no-filter.html">Последняя категория (без фильтра)</a></li>
+		</ol>
+		<h4>Особистий кабінет</h4>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="dashboard-data.html">Особистий кабінет - Ваші дані</a></li>
+			<li><a target="_blank" href="dashboard-history.html">Особистий кабінет - Історія замовлень</a></li>
+			<li><a target="_blank" href="dashboard-favorite.html">Особистий кабінет - Список бажань</a></li>
+			<li><a target="_blank" href="dashboard-viewed.html">Особистий кабінет - Переглянуті товари</a></li>
+			<li><a target="_blank" href="dashboard-address.html">Особистий кабінет - Мої адреси</a></li>
+			<li><a target="_blank" href="dashboard-address-2.html">Особистий кабінет - Мої адреси 2</a></li>
+		</ol>
+		<h4>Оформление заказа</h4>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="success-order.html">успешный заказ</a></li>
+			<li><a target="_blank" href="checkout.html">оформление заказа</a></li>
+			<li><a target="_blank" href="checkout-no-auth.html">оформление заказа если не зарегестрирован (авторизация)</a></li>
+			<li><a target="_blank" href="checkout-no-auth-registr.html">оформление заказа если не зарегестрирован (регистрация)</a></li>
+		</ol>
+		<h4>Авторизация</h4>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="registration.html">Реєстрація</a></li>
+			<li><a target="_blank" href="authorization.html">Авторизація</a></li>
+			<li><a target="_blank" href="recovery-password.html">Відновлення паролю</a></li>
+		</ol>
+		<h4>Текстовые страницы</h4>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="blog.html">Блог</a></li>
+			<li><a target="_blank" href="post.html">страница блога</a></li>
+			<li><a target="_blank" href="text-page.html">Текстова сторінка</a></li>
+			<li><a target="_blank" href="payment.html">Оплата та доставка</a></li>
+			<li><a target="_blank" href="about.html">Про компанію</a></li>
+		</ol>
+		<h2>Готові сторінки опт:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home-opt.html">Головна(главная для авторизованных)</a></li>
+			<li><a target="_blank" href="home-opt-noauth.html">Головна(главная для неавторизованных)</a></li>
+			<li><a target="_blank" href="product-opt-noauth.html">карточка товара в наличии (для неавторизованных)</a></li>
+			<li><a target="_blank" href="product-opt-discount.html">карточка товара в наличии (для авторизованных)</a></li>
+			<li><a target="_blank" href="product-opt-out.html">карточка товара (Немає в наявності)</a></li>
+			<li><a target="_blank" href="product-opt-discontinued.html">карточка товара (Знято з виробництва)</a></li>
+			<li><a target="_blank" href="product-opt-order.html">карточка товара (Під замовлення)</a></li>
+			<li><a target="_blank" href="categories-opt.html">последняя категория для aвторизованных</a></li>
+			<li><a target="_blank" href="registration-opt.html">Реєстрація</a></li>
+		</ol>
+		<h2>Попапи:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html#"></a></li>
+		</ol>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	h4 {
+		margin-bottom: 15px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>
